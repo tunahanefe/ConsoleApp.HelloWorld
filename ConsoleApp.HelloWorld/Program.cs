@@ -14,6 +14,14 @@ namespace ConsoleApp.HelloWorld
             Console.Write("Mesajınız : ");
             string msg = Console.ReadLine();
             Console.WriteLine($"İletmiş olduğunuz mesaj : {msg}");
+
+            Model mdl = new Model();
+            Console.Write("Adınız : ");
+            mdl.Adi = Console.ReadLine();
+            Console.Write("Soyadınız : ");
+            mdl.Soyadi = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine(mdl.IsimYazdir());
             Console.ReadKey();
         }
     }
