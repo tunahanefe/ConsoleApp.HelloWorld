@@ -11,6 +11,9 @@ namespace ConsoleApp.HelloWorld
         static void Main(string[] args)
         {
             Console.WriteLine("Bu HelloWorld uygulaması, GitHub test projesidir.");
+            Console.Write("Mesajınız : ");
+            string msg = Console.ReadLine();
+            Console.WriteLine($"İletmiş olduğunuz mesaj : {msg}");
             Console.ReadKey();
         }
     }
